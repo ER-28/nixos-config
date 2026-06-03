@@ -14,8 +14,12 @@
 
   programs.git = {
     enable = true;
-    userName = "Your Name";
-    userEmail = "you@example.com";
+    settings = {
+      user = {
+        name = "Your Name";
+        email = "you@example.com";
+      };
+    };
   };
 
   programs.home-manager.enable = true;

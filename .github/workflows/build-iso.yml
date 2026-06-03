@@ -19,7 +19,8 @@ jobs:
 
       - name: Build ISO
         run: |
-          nix build .#nixosIso --out-linker=static
+          nix build .#nixosIso
+
 
           # Note: This assumes the flake is configured to support buildISO
 

@@ -14,7 +14,7 @@
   users.users.${username} = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" "video" ];
-    initialPassword = "changeme";  # Change after first login
+    initialPassword = "admin";
   };
 
   # Enable sudo without password (optional but convenient)

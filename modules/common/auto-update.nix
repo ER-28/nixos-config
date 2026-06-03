@@ -3,7 +3,7 @@
 {
   system.autoUpgrade = {
     enable = true;
-    flake = "github:yourusername/nixos-config#nixos-main";  # ← Update username + hostname
+    flake = "github:ER-28/nixos-config#nixos-main";
     flags = [ "--update-input" "nixpkgs" "--no-write-lock-file" ];
     dates = "04:00";
     randomizedDelaySec = "45min";

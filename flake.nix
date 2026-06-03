@@ -16,8 +16,8 @@
   outputs = { self, nixpkgs, home-manager, agenix, ... }@inputs:
     let
       system = "x86_64-linux";
-      hostname = "nixos-main";   # ← Change this to your hostname
-      username = "youruser";     # ← Change to your username
+      hostname = "nixos-main";
+      username = "admin";
     in {
       nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
         inherit system;

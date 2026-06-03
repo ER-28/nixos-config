@@ -13,7 +13,9 @@
   networking.hostName = "nixos-main";
   time.timeZone = "Europe/Paris";           # Change as needed
   i18n.defaultLocale = "en_US.UTF-8";
-  console.keyboardLayout = "azerty";
+  console.keyMap = "fr";
+  services.xserver.layout = "fr";
+  console.useXkbConfig = true;
 
   # User configuration
   users.users.${username} = {

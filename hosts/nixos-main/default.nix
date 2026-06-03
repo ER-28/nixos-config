@@ -3,7 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/common
+    ../../modules/common/default.nix
   ];
 
   networking.hostName = "nixos-main";

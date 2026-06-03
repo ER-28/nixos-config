@@ -59,18 +59,4 @@
         ];
       };
     };
-
-
-      # ISO Image builder
-      nixosIso = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [
-          ./hosts/${hostname}/default.nix
-          agenix.nixosModules.default
-          {
-            console.setup.keyboardConfiguration.layout = "us";
-            services.openssh.enable = true;
-          }
-        ];
-      };
 }

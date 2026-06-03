@@ -1,0 +1,24 @@
+name: Update Flake Dependencies
+
+on:
+  schedule:
+    - cron: '0 3 * * *'    # Daily at 3 AM UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: DeterminateSystems/nix-installer-action@v10
+
+      - name: Update flake.lock
+        run: nix flake update --commit-lock-file
+
+      - name: Commit & Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(flake): update dependencies"

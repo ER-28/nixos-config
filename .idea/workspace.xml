@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c3fe0b92-7f41-4907-9546-800000707dbb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/flake.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/update.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/youruser/home.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/nixos-main/default.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/nixos-main/hardware-configuration.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/common/auto-update.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/common/boot.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/common/default.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/common/networking.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/common/nix-settings.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +70,10 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "application.passwordSafe",
     "vue.rearranger.settings.migration": "true"
@@ -77,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1780475925166</updated>
-      <workItem from="1780475926345" duration="121000" />
+      <workItem from="1780475926345" duration="861000" />
     </task>
     <servers />
   </component>

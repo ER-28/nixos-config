@@ -31,9 +31,25 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.${username} = import ../home/${username}/home.nix;
+            home-manager.users.${username} = import (self + "/home/${username}/home.nix");
+          }
+        ];
+      };
+
+      # ISO Image builder
+      nixosIso = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./hosts/${hostname}/default.nix
+          agenix.nixosModules.default
+          {
+            # ISO specific overrides
+            console.setup.keyboardConfiguration.layout = "us";
+            # We disable things that don't make sense in an ISO installer
+            services.openssh.enable = true;
           }
         ];
       };
     };
+
 }
